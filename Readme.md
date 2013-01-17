@@ -1,3 +1,6 @@
+```
+npm install directory-structure
+```
 
 ```js
 var mkdirs = require('directory-structure')
