@@ -1,0 +1,20 @@
+{
+  "name": "directory-structure",
+  "version": "0.0.1",
+  "description": "Create an empty directory structure",
+  "main": "directory-structure.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "repository": "",
+  "author": "Ben Gourley",
+  "license": "BSD",
+  "dependencies": {
+    "async": "~0.1.22",
+    "mkdirp": "~0.3.4"
+  },
+  "devDependencies": {
+    "rimraf": "~2.1.1",
+    "mocha": "~1"
+  }
+}
