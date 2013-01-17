@@ -1,6 +1,12 @@
+![Build Status](https://travis-ci.org/bengourley/node-directory-structure.png?branch=master)
+
+## Install:
+
 ```
 npm install directory-structure
 ```
+
+## Usage:
 
 ```js
 var mkdirs = require('directory-structure')
