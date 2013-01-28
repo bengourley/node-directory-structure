@@ -2,13 +2,13 @@
 
 Create arbitrary directory structures.
 
-## Install:
+## Install
 
 ```
 npm install directory-structure
 ```
 
-## Usage:
+## Usage
 
 ```js
 var mkdirs = require('directory-structure')
@@ -22,7 +22,16 @@ var mkdirs = require('directory-structure')
 
 Eg:
 ```js
-mkdirs('/Users/bengourley', ['foo', 'bar', 'baz'], function () {
+mkdirs('/Users/bengourley', ['foo', 'bar', 'baz'], function (err) {
+  if (err) throw err
   console.log('done!')
 })
+```
+
+Results in:
+```
+/Users/bengourley
+└─┬ foo
+  ├ bar
+  └ baz
 ```
