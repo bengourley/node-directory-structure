@@ -63,4 +63,15 @@ describe('directories()', function () {
     })
   })
 
+  it('should emit log events events', function (done) {
+    var logs = 0
+    mkdirs(join(__dirname, 'tmp'), ['dir1', 'dir2'], function (err) {
+      assert(!err)
+      assert(logs)
+      done()
+    }).on('log', function (msg, level) {
+      logs++
+    })
+  })
+
 })
